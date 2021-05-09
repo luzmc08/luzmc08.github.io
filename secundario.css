@@ -1,0 +1,16 @@
+#mensaje{
+    visibility:hidden
+}
+    
+.puntero:hover{
+    cursor: pointer;
+}
+    
+.textoresaltado{
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;                                                   
+}
+    
+.colortexto{
+    color: darkblue;
+}

@@ -1,0 +1,16 @@
+/*Modificacion de cabeceras h2*/
+h2,h3,h4{
+    color: yellow;
+}
+
+.mensaje{
+    background-color: darkseagreen;
+}
+
+body{
+    background-color: deepskyblue;
+}
+
+p.colortexto{
+    color:rgb(255, 255,0);
+}
