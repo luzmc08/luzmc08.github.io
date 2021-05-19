@@ -1,12 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-workbook1 = "peliculas.xlsx"
+workbook1 = "DATOS1.xlsx"
 
 df = pd.read_excel(workbook1)
 print(df.head())
-valores = df[["Title","Runtime (Minutes)"]]
+valores = df[["DATOS GENERALES","AÑO"]]
 print(valores)
-ax=valores.plot.bar(x="Title",y="Runtime (Minutes)",
+ax=valores.plot.bar(x="DATOS GENERALES",y="AÑO",
                     rot=0, color="orange" )
 plt.show()
