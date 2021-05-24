@@ -10,9 +10,7 @@ print(df.head())
 valores = df[["Nombre","Edad","New Worth (Billions)"]]
 print(valores)
 
-
 ax=valores.plot(x="Nombre", y=["Edad","New Worth (Billions)"], marker=".")
-
 
 plt.xlabel("Millonarios")
 plt.ylabel("Edad  y Valor Neto (Billones)")
