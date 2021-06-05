@@ -21,9 +21,23 @@ function crearFruta (nombre,precio){
     obj.nombre = nombre;
     obj.precio = precio
     obj.cantidad = cantidad
-    obj.calcularPrecioTotal = function(precio){
+    obj.calcularPrecioTotal = function(){
         return obj.precio * obj.cantidad;
     };
-    console.log(obj);
     return obj;
+}
+
+
+
+//funcion que carga las frutas nuevas.
+function cargaFruta(nombre,precio,cantidad){
+    var miFruta = crearFruta(nombre,precio,cantidad);
+    var listaFrutas = document.getElementById('listaFrutas');
+
+    listaFrutas.innerHTML = listaFrutas.innerHTML +
+    'Nombre' +miFruta.nombre +
+    '- Precio:' +miFruta.precio +
+    '- Cantidad:' +miFruta.cantidad +
+    '- Total:'+miFruta.calcularPrecioTotal() +
+    '<br>';
 }

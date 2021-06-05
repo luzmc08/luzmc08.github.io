@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>Formulario de Calculo de frutas</h1>
-    <form action="javascript:crearFruta (document.getElementByName ('nombreFruta')
-    document.getElementByName ('precioFruta'),
-    document.getElementByName ('cantidadFruta');)">
+    <form action="javascript:crearFruta (document.getElementByName ('nombreFruta')[0].value,
+    document.getElementByName ('precioFruta')[0].value,
+    document.getElementByName ('cantidadFruta')[0].value);">
         <label for="nombre">Ingrese el nombre: &nbsp;&nbsp;&nbsp;</label>
         <input type="text" name="nombreFruta"> <br>
         <label for="precio">Ingrese el precio: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
