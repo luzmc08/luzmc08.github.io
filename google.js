@@ -1,7 +1,7 @@
 function iniciarMap(){
-    var coord = {lat:-34.5956145 ,lng: -58.4431949};
+    var coord = {lat:-12.064260, lng:   -77.041793};  
     var map = new google.maps.Map(document.getElementById('map'),{
-      zoom: 10,
+      zoom: 18,
       center: coord
     });
     var marker = new google.maps.Marker({
